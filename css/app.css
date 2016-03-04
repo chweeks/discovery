@@ -1,0 +1,92 @@
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+section {
+  text-align: left;
+}
+
+.half-text {
+  width: 80%;
+}
+
+.blue-wrapper-text {
+  background: rgba(41,121,158,0.3);
+  width: 60%;
+  text-align: left;
+  padding: 1% !important;
+}
+
+.grey-wrapper > p {
+  font-size: 50%;
+  font-weight: bold;
+  text-align: left;
+  color: #40525E;
+}
+
+.grey-wrapper {
+  background: rgba(211,211,211,0.5);
+  height: 50%;
+  width: 100%;
+}
+
+.content-wrapper {
+  text-align: center;
+  height: 100%;
+  padding: 5% !important;
+}
+
+.content-wrapper-blue {
+  text-align: center;
+  height: 100%;
+  background: rgba(41,121,158,0.3);
+  padding-top: 5% !important;
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+}
+
+.stacked-bar {
+  position: relative;
+  height: 25%;
+  width: 90%;
+  top: 30%;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+}
+
+.weekly-viewing {
+  margin: 0 !important;
+  height: 100%;
+  display: inline-block;
+}
+
+.stacked-bar > p {
+  text-align: left;
+  font-size: 50%;
+  color: #40525E;
+}
+
+.weekly-viewing.tv {
+  width: 71%;
+  background-color: red;
+}
+
+.weekly-viewing.laptop {
+  width: 19%;
+  background-color: blue;
+}
+
+.weekly-viewing.tablet {
+  width: 4%;
+  background-color: green;
+}
+
+.weekly-viewing.smartphone {
+  width: 6%;
+  background-color: pink;
+}
+
+p {
+  margin: 0 !important;
+  color: #D3D3D3
+}
