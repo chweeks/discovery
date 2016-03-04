@@ -29,8 +29,8 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-menu-title="Home">
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4" data-background-video-loop>
-						<h1>TELEVISION:<br> BEYOND TV</h1>
+					<section width=100% height=100% data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4" data-background-video-loop>
+						<h1 style="color: black">TELEVISION:<br> BEYOND TV</h1>
 					</section>
 
 					<section>
@@ -52,16 +52,18 @@
 				</section>
 
 				<section data-menu-title="Beyond the Box">
-					<section>
-						<h1>BEYOND THE BOX</h1>
-						<p>
-							If some had predicted that the arrival of digital
-							and all its forms of entertainment and
-							distractions would overwhelm television, then
-							in fact the opposite happened...<br><br>
-							Digital has come along and liberated television
-							from the box that it was previously held in.
-					  </p>
+					<section data-background="http://cache1.asset-cache.net/gc/475845391-social-life-gettyimages.jpg?v=1&c=IWSAsset&k=2&d=6qZXEII76Zl5cJC8v4OhlgAYfd1nOuMsbCQP2ABCu0KGNlCtrutcVSePVJy05UTEf60nL2TPn7sNq1aJI0M9eQ%3D%3D">
+						<div style="position:absolute; background-color: #323299; width: 66%; height: 500px; z-index:1; opacity: 0.4"></div>
+            <div style="text-align: left; width: 55%; position:relative; z-index:2; left:1%; top: 1%">
+							<h1>Television:<br>BEYOND...THE BOX</h1>
+							<p>
+								If some had predicted that the arrival of digital
+								and all its forms of entertainment and
+								distractions would overwhelm television, then
+								in fact the opposite happened, digital has come along and
+								liberated television from the box that it was previously held in.
+						  </p>
+						</div>
 					</section>
 
 					<section>
@@ -493,7 +495,7 @@
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				width: 1500,
+				width: 2000,
 				height: 700,
 				margin: 0.1,
 				minScale: 0.2,
@@ -502,7 +504,7 @@
 				controls: true,
 				progress: true,
 				history: true,
-				center: true,
+				center: false,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
