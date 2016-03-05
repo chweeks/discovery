@@ -83,27 +83,80 @@
 							<p>
 								Television has been unleashed, colonising digital screens
 							</p>
-							<div class='grey-wrapper'>
+							<div class='grey-wrapper' id="greyWrapper">
 								<p>
 									PROPORTION OF WEEKLY VIEWING ACROSS SCREENS
 								</p>
-								<div class='stacked-bar'>
-									<p>TOTAL: 4.0hrs a day</p>
-									<div class='weekly-viewing tv'>
-										<span>71%</span>
-									</div
-									><div class='weekly-viewing laptop'>
-										<span class='small'>19%</span>
-									</div
-									><div class='weekly-viewing tablet'>
-										<span class='small'>4%</span>
-									</div
-									><div class='weekly-viewing smartphone'>
-										<span class='small'>6%</span>
+								<div class="chart-container" id="chartContainer">
+									<div class='stacked-bar'>
+										<p>TOTAL: 4.0hrs a day</p>
+										<div class='weekly-viewing tv'>
+											<span>71%</span>
+										</div
+										><div class='weekly-viewing laptop'>
+											<span class='small'>19%</span>
+										</div
+										><div class='weekly-viewing tablet'>
+											<span class='small'>4%</span>
+										</div
+										><div class='weekly-viewing smartphone'>
+											<span class='small'>6%</span>
+										</div>
+									</div>
+									<div id='weeklyViewingStats'>
+										<div class='stacked-bar small'>
+											<p>16-34 year olds: 3.9hrs a day</p>
+											<div class='weekly-viewing tv'>
+												<span>53%</span>
+											</div
+											><div class='weekly-viewing laptop'>
+												<span>30%</span>
+											</div
+											><div class='weekly-viewing tablet'>
+												<span>6%</span>
+											</div
+											><div class='weekly-viewing smartphone'>
+												<span>11%</span>
+											</div>
+										</div>
+										<div class='stacked-bar small'>
+											<p>34-54 year olds: 3.9hrs a day</p>
+											<div class='weekly-viewing tv'>
+												<span>74%</span>
+											</div
+											><div class='weekly-viewing laptop'>
+												<span>16%</span>
+											</div
+											><div class='weekly-viewing tablet'>
+												<span>5%</span>
+											</div
+											><div class='weekly-viewing smartphone'>
+												<span>5%</span>
+											</div>
+										</div>
+										<div class='stacked-bar small'>
+											<p>55-65 year olds: 4.4hrs a day</p>
+											<div class='weekly-viewing tv'>
+												<span>85%</span>
+											</div
+											><div class='weekly-viewing laptop'>
+												<span>11%</span>
+											</div
+											><div class='weekly-viewing tablet'>
+												<span>2%</span>
+											</div
+											><div class='weekly-viewing smartphone'>
+												<span>2%</span>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class='more-data'>
+
+								<div id='moreData' onClick="showMore()">
 									<i class="fa fa-chevron-circle-down"></i> [see more data]
+								</div>
+								<div id='lessData' onClick="showLess()">
+									<i class="fa fa-chevron-circle-down"></i> [see less data]
 								</div>
 							</div>
 							<div class='small-text-box'>
@@ -180,7 +233,7 @@
 							<div class='grey-wrapper'>
 								<p>% WHO REGULARLY WATCH</p>
 								<canvas class="chart" id="myChart" width="1000" height="200"></canvas>
-								<div class='more-data'>
+								<div id='moreData'>
 									<i class="fa fa-chevron-circle-down"></i> [see more data]
 								</div>
 							</div>
@@ -231,7 +284,7 @@
 									<p>
 										“The best thing about television is the great shows
 										they have on. I can always find something to watch.
-										V provides great entertainment!”
+										TV provides great entertainment!”
 									</p>
 								</div>
 								<div>
@@ -243,10 +296,6 @@
 								</div>
 							</div>
 						</div>
-					</section>
-
-					<section>
-
 					</section>
 				</section>
 
@@ -605,6 +654,7 @@
 		<script src="js/Chart.min.js"></script>
 		<script src="js/Chart.HorizontalBar.js"></script>
 		<script src="js/myCharts.js"></script>
+		<script src="js/moreData.js"></script>
 		<script src="js/reveal.js"></script>
 
 		<script>
