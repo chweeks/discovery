@@ -96,7 +96,7 @@ p {
 }
 
 .content-wrapper-blue {
-  text-align: center;
+  text-align: left;
   height: 100%;
   background: rgba(41,121,158,0.3);
   padding-top: 1% !important;
