@@ -23,6 +23,11 @@ p {
   font-size: 60% !important
 }
 
+.chart {
+  margin-top: 2% !important;
+  margin-left: 5% !important;
+}
+
 .small-text-box {
   float: left;
   display: inline-block;
