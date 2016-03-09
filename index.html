@@ -16,9 +16,9 @@
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<!-- <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> -->
 		<link rel='stylesheet' href='css/app.css'>
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -91,7 +91,7 @@
 									<div class='stacked-bar'>
 										<p>TOTAL: 4.0hrs a day</p>
 										<div class='weekly-viewing tv'>
-											<span>71%</span>
+											<span class="small">71%</span>
 										</div
 										><div class='weekly-viewing laptop'>
 											<span class='small'>19%</span>
@@ -152,10 +152,10 @@
 									</div>
 								</div>
 
-								<div id='moreData' onClick="showMore()">
+								<div id='moreData' onClick="showMoreStacked()">
 									<i class="fa fa-chevron-circle-down"></i> [see more data]
 								</div>
-								<div id='lessData' onClick="showLess()">
+								<div id='lessData' onClick="showLessStacked()">
 									<i class="fa fa-chevron-circle-down"></i> [see less data]
 								</div>
 							</div>
@@ -233,8 +233,12 @@
 							<div class='grey-wrapper'>
 								<p>% WHO REGULARLY WATCH</p>
 								<canvas class="chart" id="myChart" width="1000" height="200"></canvas>
-								<div id='moreData'>
+								<canvas class="chart" id="hiddenChart" width="1000" height="200" style="display:none"></canvas>
+								<div id='moreData' onClick="showMoreCharts()">
 									<i class="fa fa-chevron-circle-down"></i> [see more data]
+								</div>
+								<div id='lessData' onClick="showLessCharts()">
+									<i class="fa fa-chevron-circle-down"></i> [see less data]
 								</div>
 							</div>
 							<div class='small-text-box'>
